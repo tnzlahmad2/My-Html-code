@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(249, 250, 251);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.header {
+  background-color: white;
+  display: flex;
+  height: 60px;
+  position: fixed;
+}
+.header #menu1 {
+  padding: 14px;
+  color: #1e40af;
+  font-size: 35px;
+  font-weight: 900;
+}
+.h-7 {
+  height: 1.75rem;
+
+margin-top: 17px;
+}
+#menu3 {
+    margin-left: 400px;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+}
+#manu3 .flex-box {
+  display: flex;
+}
+.flex-box li {
+  list-style-type: none;
+  margin: 20px;
+  float: left;
+}
+.flex-box li a {
+  text-decoration: none;
+  color: black;
+}
+.flex-box li a .fa-user-cog {
+  margin-right: 15px;
+}
+.flex-box li a .fa-bell {
+  margin-right: 15px;
+  font-size: 18px;
+}
+.flex-box li #user-image {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  margin-top: -10px;
+  cursor: pointer;
+ 
+}
+li a .Notifications {
+  width: 20px;
+  height: 20px;
+  background: #e73737;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 4px;
+  border-radius: 20px;
+  margin-right: 8px;
+} 
+#user{
+   margin-top: 24px;
+} /*  media query for header nav*/
+@media screen and (max-width: 1100px){
+       #menu3 {
+        margin-left: 150px;
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-box li {
+        margin-left: 10px; 
+      }
+}
+@media screen and (max-width: 400px){
+    
+    .header #menu1 {
+       margin-top: 10px; 
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: -10px;
+      }
+      .h-7 {
+        height: 1.1rem;
+        margin-left: -40px;
+        margin-top: 20px;
+      }
+      #menu3 {
+        margin-left: 0px;
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+    .flex-box li {
+        margin: 1px;
+        font-size: 10px;
+        margin-top: 23px;
+      }
+      
+      .flex-box li a .fa-user-cog {
+        margin-right: 0px;
+        font-size: 10px;
+      }
+      .flex-box li a .fa-bell {
+        margin-right: 0px;
+        font-size: 10px;
+      }
+      .flex-box li #user-image {
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        margin-top: -1px;
+        cursor: pointer;
+        margin-left: 5px;
+       
+      }
+      li a .Notifications {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 5px;
+        border-radius: 20px;
+        margin-right: 5px;
+        display: none;
+      }
+}
+/* side nav bar css*/
+
+.content{
+    display: flex;
+}
+.sidenav{
+    height: 800px;
+    width: 18%;
+    background-color: #1740c9;
+    color: white;
+    margin-top: 60px;
+}
+#menu-label{
+    color:white;
+    font-size: 10px;
+    padding: 10px;
+    margin-top:  0.47rem;
+    margin-bottom:  0.47rem;
+    letter-spacing: 1px;
+}
+.sidenav-icon li{
+     color: white;
+     list-style-type: none;
+     margin-top: 30px;
+}
+.sidenav-icon li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 13px;
+   
+   
+}
+.fa-plus{
+    margin-left: 20px;
+}
+.fa-comment-alt-dots{
+    margin-left: 17px;
+}
+#menu-label2{
+   
+    color:white;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 0.47rem;
+    margin-bottom: 0.47rem;
+    letter-spacing: 1px;
+}
+.fa-dot-circle{
+    margin-left: 20px;
+}
+.fa-user-edit{
+    margin-left: 17px;
+}
+.fa-motorcycle{
+    margin-left: 17px;
+}
+.fa-address-book{
+    margin-left: 20px;
+}
+.fa-folder{
+    margin-left: 17px;
+}
+.fa-user{
+    margin-left: 17px;
+}
+.fa-clock{
+    margin-left: 17px;
+}
+.fa-accusoft{
+    margin-left: 15px;
+}
+.fa-baseball{
+    margin-left: 15px;
+}
+/* side nav bar css end*/
+#content-top{
+    width: 85%;
+    height: 60px;
+    margin-top: 65px;
+    background-color: white;
+}
+.fa-chevron-left{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#view-company-text{
+      font-size: 13px;
+      font-weight: 900;
+} 
+
+#add-company-btn{
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 12px;
+    background-color: rgba(30,64,175);
+    font-family:sans-serif;
+    cursor: pointer;
+    color: white;
+    float: right;
+    margin-right: 70px;
+    border: none;
+   margin-top: 10px;
+   height: 40px;
+   width: 160px;
+}
+.fa-plus-circle{
+    margin-left: 5px;
+}
+#body-of-content{
+    height: 280px; 
+    width: 840px; 
+    display: block; 
+    position:absolute; 
+    margin-top: 135px;
+    margin-left: 300px;
+    background-color: white;
+}
+#search input{
+    width: 350px;
+    height: 35px;
+    padding: 5px;
+    background-color:#F3F4F6;
+    margin-left: 23px;
+    margin-top: 23px;
+    border: none;
+  
+}
+#search-btn{
+    width: 30px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    margin-left: -6px;
+    background-color:#F3F4F6 ;
+    border-radius: 0px 5px 5px 0px; 
+}
+#search input:focus{
+    outline: none;
+}
+::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+}
+.table-data{
+    height: 130px;
+    width: 790px;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.2px solid rgb(231, 231, 231);
+}
+#first-tbl-row{
+    height: 70px;
+
+}
+#cmpny-name{
+    font-size: 12px;
+    font-family: BwNistaGeometricDEMOThin,sans-serif;
+    font-weight: 100;
+
+}
+#work-wise-logo{
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin-top: -10px;
+    cursor: pointer;
+   
+}
+#work-wise-txt{
+    position: relative;
+    font-size: 12px;
+    font-family: BwNistaGeometricDEMORegular,sans-serif;  
+    font-weight: 500;
+    cursor: pointer;
+}
+#inactive-btn{
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 12px;
+    padding: 7px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid white;
+    background: #029963;
+    cursor: pointer;
+}
+.fa-ellipsis-v{
+    margin-top: 23px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
